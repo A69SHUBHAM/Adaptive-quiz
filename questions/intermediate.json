@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "Which CSS property is used to change the text color?",
+    "options": [
+      "color",
+      "font-color",
+      "text-color",
+      "fg"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "question": "How do you center-align text using CSS?",
+    "options": [
+      "text-align:center",
+      "align:center",
+      "center-text",
+      "justify"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "question": "Which property is used to change the background color?",
+    "options": [
+      "background-color",
+      "bgcolor",
+      "back-color",
+      "background"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "Which CSS property controls the size of an element's font?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size",
+      "font-style"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "question": "What does 'display: none' do?",
+    "options": [
+      "Hides the element",
+      "Shows the element",
+      "Removes only margins",
+      "Makes it inline"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which unit is relative to the root font-size?",
+    "options": [
+      "rem",
+      "em",
+      "px",
+      "%"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 7,
+    "question": "Which CSS property is used to create space inside an element?",
+    "options": [
+      "padding",
+      "margin",
+      "gap",
+      "spacing"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "question": "What does the 'flex' property do in a flex container?",
+    "options": [
+      "Defines flexible space",
+      "Sets width",
+      "Creates table layout",
+      "Positions element"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "Which pseudo-class applies when the user hovers over an element?",
+    "options": [
+      ":hover",
+      ":active",
+      ":focus",
+      ":visited"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "How do you select an element with id 'main' in CSS?",
+    "options": [
+      "#main",
+      ".main",
+      "main",
+      "*main"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 11,
+    "question": "Which property sets the space between flex items?",
+    "options": [
+      "gap",
+      "spacing",
+      "margin",
+      "padding"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "question": "Which property is used to make text bold?",
+    "options": [
+      "font-weight",
+      "text-weight",
+      "font-style",
+      "font-bold"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "question": "What does 'box-sizing: border-box' do?",
+    "options": [
+      "Includes padding in width",
+      "Excludes padding",
+      "Removes borders",
+      "Sets box to grid"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "Which CSS function rotates an element?",
+    "options": [
+      "transform: rotate()",
+      "rotate()",
+      "spin()",
+      "transform: spin()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 15,
+    "question": "How do you apply a CSS rule to all paragraph elements?",
+    "options": [
+      "p { ... }",
+      ".p { ... }",
+      "#p { ... }",
+      "*p { ... }"
+    ],
+    "answer": 0
+  }
+]

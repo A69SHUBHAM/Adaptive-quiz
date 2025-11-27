@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Teacher Dashboard — QUIZENG.IO</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header class="topbar"><div class="brand"><a href="../index.html" class="logo">QUIZENG.IO</a></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Teacher Dashboard</h2>
+    <div class="controls">
+      <label>Upload question bank JSON: <input id="upload" type="file" accept=".json"></label>
+      <p class="small muted">Bank JSON should be an array of questions. If not specified, you'll be prompted for level.</p>
+    </div>
+    <div id="studentsList" style="margin-top:14px"></div>
+    <canvas id="studentsChart" width="600" height="260" style="margin-top:18px"></canvas>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/teacher_app.js"></script>
+<script>window.addEventListener('DOMContentLoaded', ()=>{ window.teacherApp.init(); });</script>
+</body></html>

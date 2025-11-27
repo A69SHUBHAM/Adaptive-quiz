@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlinks Text Mark Language",
+      "Hyperlinking Text Markup Language"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which tag is used for a paragraph?",
+    "options": [
+      "<p>",
+      "<div>",
+      "<span>",
+      "<para>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": [
+      "<br>",
+      "<break>",
+      "<lb>",
+      "<newline>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "Which attribute is used to provide alternative text for an image?",
+    "options": [
+      "alt",
+      "src",
+      "title",
+      "description"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "question": "Which tag is used to create an unordered list?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which attribute is used to specify the URL of a link?",
+    "options": [
+      "href",
+      "src",
+      "link",
+      "url"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 7,
+    "question": "Which tag is used to define a table row?",
+    "options": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<table>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "question": "Which element defines the title of a document shown in the browser tab?",
+    "options": [
+      "<title>",
+      "<head>",
+      "<meta>",
+      "<header>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "Which tag is used for the largest heading?",
+    "options": [
+      "<h1>",
+      "<h6>",
+      "<header>",
+      "<heading>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "What does the <a> tag define?",
+    "options": [
+      "A hyperlink",
+      "An anchor",
+      "Both A and B",
+      "A button"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 11,
+    "question": "Which tag is used to define a list item?",
+    "options": [
+      "<li>",
+      "<ul>",
+      "<ol>",
+      "<item>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 12,
+    "question": "Which element contains metadata about the document?",
+    "options": [
+      "<head>",
+      "<body>",
+      "<html>",
+      "<meta>"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "question": "Which attribute is used to open a link in a new tab?",
+    "options": [
+      "target",
+      "rel",
+      "href",
+      "new"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "How do you create a comment in HTML?",
+    "options": [
+      "<!-- comment -->",
+      "// comment",
+      "/* comment */",
+      "' comment"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 15,
+    "question": "Which HTML element is used to embed JavaScript?",
+    "options": [
+      "<script>",
+      "<js>",
+      "<javascript>",
+      "<code>"
+    ],
+    "answer": 0
+  }
+]

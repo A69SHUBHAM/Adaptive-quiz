@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "Which keyword creates a block-scoped variable in JavaScript?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "both let and const"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "What does '=== ' do in JavaScript?",
+    "options": [
+      "Strict equality",
+      "Assignment",
+      "Type conversion equality",
+      "Inequality"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "question": "What is a Promise in JavaScript?",
+    "options": [
+      "An object for async operations",
+      "A function",
+      "A loop",
+      "A conditional"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "Which method converts JSON string to object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "toJSON()",
+      "parseJSON()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "question": "Which array method returns a new array with results of calling a function on every element?",
+    "options": [
+      "map()",
+      "forEach()",
+      "filter()",
+      "reduce()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "What does async/await do?",
+    "options": [
+      "Simplifies working with Promises",
+      "Blocks UI",
+      "Creates Promises only",
+      "Defines classes"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 7,
+    "question": "Which method removes the last element from an array?",
+    "options": [
+      "pop()",
+      "push()",
+      "shift()",
+      "unshift()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "question": "What is event delegation?",
+    "options": [
+      "Handling events at a parent element",
+      "Removing events",
+      "Stopping events",
+      "Delegating functions"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "Which property stops event propagation?",
+    "options": [
+      "event.stopPropagation()",
+      "event.preventDefault()",
+      "return false",
+      "event.cancel()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which operator assigns default value when undefined?",
+    "options": [
+      "??",
+      "||",
+      "&&",
+      "?:"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 11,
+    "question": "Which function schedules code to run after current call stack?",
+    "options": [
+      "setTimeout(fn,0)",
+      "setInterval(fn,0)",
+      "Promise.resolve().then(fn)",
+      "Both 1 and 3"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 12,
+    "question": "Which method merges arrays into a new one?",
+    "options": [
+      "concat()",
+      "push()",
+      "splice()",
+      "merge()"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 13,
+    "question": "What is hoisting in JavaScript?",
+    "options": [
+      "Declarations moved to top",
+      "Variables deleted",
+      "Functions compiled",
+      "Errors thrown"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 14,
+    "question": "Which symbol creates a template literal?",
+    "options": [
+      "` (backtick)",
+      "' (single quote)",
+      "\" (double quote)",
+      "# (hash)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 15,
+    "question": "Which API is used to make network requests in modern browsers?",
+    "options": [
+      "fetch()",
+      "XMLHttpRequest",
+      "axios only",
+      "net.request()"
+    ],
+    "answer": 0
+  }
+]

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quiz — QUIZENG.IO</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><a href="../index.html" class="logo">QUIZENG.IO</a></div></header>
+<main class="container">
+  <section class="card">
+    <h2 id="greet">Hello</h2>
+    <div id="choose" class="choices">
+      <p class="muted">Choose difficulty to start</p>
+      <button class="level-btn" data-level="beginner">Easy</button>
+      <button class="level-btn" data-level="intermediate">Intermediate</button>
+      <button class="level-btn" data-level="advanced">Advanced</button>
+    </div>
+    <div id="quizArea" style="display:none"></div>
+    <div id="thankyouArea" style="display:none" class="thank-card card">
+      <h2>Thank you for submitting!</h2>
+      <p id="thankName" style="font-weight:700"></p>
+      <p class="small muted" id="submitTime"></p>
+      <div style="font-size:42px;color:var(--accent);margin:10px 0;">✔</div>
+      <button id="viewResultBtn" class="link-btn">View Result</button>
+    </div>
+    <div id="resultArea" style="display:none"></div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/student_app.js"></script>
+<script>window.addEventListener('DOMContentLoaded', ()=>{ window.studentApp.initQuizPage(); });</script>
+</body>
+</html>
