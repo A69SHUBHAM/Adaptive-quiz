@@ -43,6 +43,8 @@ window.studentApp = (function(){
   }
 
   function runFixedQuiz(level, questions){
+    let wrongQuestions = [];
+
     const pool = questions.slice();
     const selected = [];
     while(selected.length < 8 && pool.length) selected.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);
@@ -66,11 +68,26 @@ window.studentApp = (function(){
           Array.from(area.querySelectorAll('.option')).forEach(x=>x.classList.remove('selected'));
           optEl.classList.add('selected');
           const chosen = i;
-          setTimeout(()=>{
-            if(chosen===q.answer) score++;
-            idx++;
-            if(idx >= selected.length) finish(); else render();
-          },250);
+          setTimeout(() => {
+
+    if (chosen === q.answer) {
+        score++;
+    } else {
+        wrongQuestions.push({
+            question: q.question,
+            options: q.options,
+            correct: q.answer,
+            selected: chosen
+        });
+    }
+
+    idx++;
+
+    if (idx >= selected.length) finish(); 
+    else render();
+
+}, 250);
+
         };
         qDiv.appendChild(optEl);
       });
@@ -84,7 +101,16 @@ window.studentApp = (function(){
       document.getElementById('thankName').textContent = user.name;
       document.getElementById('submitTime').textContent = new Date().toLocaleString();
       
-      const report = { name: user.name, email: user.email||'', level, score, total:selected.length, date: new Date().toLocaleString() };
+      const report = { 
+    name: user.name, 
+    email: user.email || '', 
+    level, 
+    score, 
+    total: selected.length, 
+    date: new Date().toLocaleString(),
+    wrong: wrongQuestions
+};
+
       const all = JSON.parse(localStorage.getItem('quizeng_reports') || '[]');
       all.push(report);
       localStorage.setItem('quizeng_reports', JSON.stringify(all));

@@ -9,7 +9,25 @@
       <label>Upload question bank JSON: <input id="upload" type="file" accept=".json"></label>
       <p class="small muted">Bank JSON should be an array of questions. If not specified, you'll be prompted for level.</p>
     </div>
-    <div id="studentsList" style="margin-top:14px"></div>
+    <div class="results-container" style="margin-top:20px;">
+    <h3>Student Quiz Results</h3>
+
+    <table class="results-table" id="studentsTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Quiz Title</th>
+                <th>Score</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Date</th>
+                <th>wrong questions</th>
+            </tr>
+        </thead>
+        <tbody id="studentsList"></tbody>
+    </table>
+</div>
+
     <canvas id="studentsChart" width="600" height="260" style="margin-top:18px"></canvas>
   </section>
 </main>

@@ -76,32 +76,104 @@ window.teacherApp = (function () {
 
  
   function renderStudents() {
-    const list = JSON.parse(localStorage.getItem("quizeng_reports") || "[]");
-    const container = document.getElementById("studentsList");
+  const list = JSON.parse(localStorage.getItem("quizeng_reports") || "[]");
+  const tbody = document.getElementById("studentsList");
 
-    if (!container) return;
+  if (!tbody) return;
 
-    if (list.length === 0) {
-      container.innerHTML = `<p class="small muted">No student results yet.</p>`;
-      return;
-    }
+  tbody.innerHTML = "";
 
-    container.innerHTML = "<h3>Student Results</h3>";
-
-    const table = document.createElement("div");
-    table.className = "small";
-
-    list
-      .slice()
-      .reverse()
-      .forEach((r) => {
-        const el = document.createElement("div");
-        el.innerHTML = `<strong>${r.name}</strong> • ${r.level} • ${r.score}/${r.total} • <span class='small muted'>${r.date}</span>`;
-        table.appendChild(el);
-      });
-
-    container.appendChild(table);
+  if (list.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" class="small muted">No student results yet.</td></tr>`;
+    return;
   }
+
+  const reports = list.slice().reverse();
+
+  reports.forEach((r, index) => {
+    const pct = Math.round((r.score / r.total) * 100);
+
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${r.name}</td>
+      <td>${r.level}</td>
+      <td>${r.score}</td>
+      <td>${r.total}</td>
+      <td>${pct}%</td>
+      <td>${r.date}</td>
+      <td>${
+         r.wrong && r.wrong.length > 0 
+         ? `<button class="link-btn small" onclick="viewWrong(${index})">View</button>`
+         : `<span class="small muted">All correct</span>`
+       }</td>
+    `;
+    tbody.appendChild(row);
+  });
+}
+
+
 
   return { init };
 })();
+
+window.viewWrong = function(index) {
+
+  const reports = JSON.parse(localStorage.getItem("quizeng_reports") || "[]").slice().reverse();
+  const wrongList = reports[index].wrong;
+
+  let html = `
+    <h2 style="margin-bottom:12px;color:#05f6c6">Wrong Questions</h2>
+  `;
+
+  wrongList.forEach((q, i) => {
+    html += `
+      <div style="
+         margin-bottom:12px;
+         padding:12px;
+         border-radius:10px;
+         background:rgba(255,255,255,0.05);
+      ">
+        <div><strong style="color:#fff;">Q${i+1}.</strong> ${q.question}</div>
+        <div class="small muted">Correct: <span style="color:#34d399;">${q.options[q.correct]}</span></div>
+        <div class="small muted">You selected: <span style="color:#ff6b6b;">${q.options[q.selected]}</span></div>
+      </div>
+    `;
+  });
+
+  const modal = document.createElement("div");
+  modal.style.cssText = `
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+  `;
+
+  const box = document.createElement("div");
+  box.style.cssText = `
+    background:#0f172a;
+    padding:20px;
+    border-radius:14px;
+    width:90%;
+    max-width:500px;
+    max-height:80vh;
+    overflow-y:auto;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+  `;
+
+  box.innerHTML = html + `
+    <div style="text-align:center;margin-top:12px;">
+      <button class="link-btn" onclick="document.body.removeChild(document.getElementById('wrongModal'))">Close</button>
+    </div>
+  `;
+
+  modal.id = "wrongModal";
+  modal.appendChild(box);
+  document.body.appendChild(modal);
+};
+
