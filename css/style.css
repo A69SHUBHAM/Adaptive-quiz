@@ -259,3 +259,9 @@ button{
     padding: 12px 16px;
 }
 
+#resultChart {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto;
+    display: block;
+}

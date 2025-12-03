@@ -127,10 +127,19 @@ window.studentApp = (function(){
       res.style.display = 'block';
       const pct = Math.round((report.score/report.total)*100);
       res.innerHTML = '<h3>Quiz Completed!</h3><div class="report-grid"><div class="stat"><strong>Level</strong><div class="badge">'+report.level+'</div></div><div class="stat"><strong>Score</strong><div style="font-size:22px">'+report.score+' / '+report.total+'</div></div><div class="stat"><strong>Percentage</strong><div style="font-size:18px">'+pct+'%</div></div><div class="stat"><strong>Date</strong><div class="small muted">'+report.date+'</div></div></div>' +
-        '<div style="margin-top:12px"><canvas id="resultChart" width="400" height="200"></canvas></div>' +
+        '<div style="margin-top:12px"><canvas id="resultChart" ></canvas></div>' +
         '<div class="row" style="margin-top:12px"><button id="retake" class="link-btn" style="margin-right:8px">Retake Quiz</button><a class="link-btn" href="../index.html">Back to Portal</a></div>';
       const ctx = document.getElementById('resultChart').getContext('2d');
-      new Chart(ctx, { type:'doughnut', data:{ labels:['Correct','Wrong'], datasets:[{ data:[report.score, report.total-report.score] }] }, options:{plugins:{legend:{labels:{color:'#e6eef6'}}}} });
+      new Chart(ctx, { type:'doughnut', data:{ labels:['Correct','Wrong'], datasets:[{ data:[report.score, report.total-report.score] }] }, options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            labels: { color: '#e6eef6' }
+        }
+    }
+}
+});
 
       document.getElementById('retake').onclick = ()=>{ location.href='login.html'; };
     }
