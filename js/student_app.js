@@ -24,6 +24,12 @@ window.studentApp = (function(){
     }
 
     document.getElementById('greet').textContent = 'Hello, ' + user.name;
+    const levelNames = {
+    beginner: "Easy",
+    intermediate: "Intermediate",
+    advanced: "Advanced"
+};
+
 
     
     const last = JSON.parse(localStorage.getItem("last_performance") || "null");
@@ -48,7 +54,8 @@ window.studentApp = (function(){
       recBox.style.marginTop = "5px";
       recBox.innerHTML = `
         Recommended level based on your last quiz:
-        <strong style="color:var(--accent)">${recommended}</strong>
+        <strong style="color:var(--accent)">${levelNames[recommended]}
+</strong>
       `;
 
       document.getElementById("greet").after(recBox);
