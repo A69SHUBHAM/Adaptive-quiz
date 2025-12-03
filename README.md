@@ -1,5 +1,3 @@
+PROJECT NAME : ADAPTIVE QUIZ ENGINE
+
 Teacher password: teach123
-
-Project Name : Adaptive Quiz Engine
-
-
