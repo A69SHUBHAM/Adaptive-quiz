@@ -118,12 +118,41 @@ window.studentApp = (function(){
     result.style.display = 'none';
     area.style.display = 'block';
 
+    const levelNames = {
+    beginner: "Easy",
+    intermediate: "Intermediate",
+    advanced: "Advanced"
+};
+
+document.getElementById('quizLevel').textContent =
+    "Level: " + levelNames[level];
+
+
 
     function render(){
       area.innerHTML = '';
-      const q = selected[idx];
 
-      const qDiv = document.createElement('div');
+
+const levelNames = {
+    beginner: "Easy",
+    intermediate: "Intermediate",
+    advanced: "Advanced"
+};
+const levelTitle = document.createElement("h2");
+levelTitle.style.color = "var(--accent)";
+levelTitle.style.marginBottom = "10px";
+levelTitle.style.textAlign = "center";
+levelTitle.textContent = "Difficulty: " + levelNames[level];
+area.appendChild(levelTitle);
+
+
+const q = selected[idx];
+const qDiv = document.createElement('div');
+qDiv.className = 'question';
+
+
+      
+
       qDiv.className='question';
       qDiv.innerHTML = `
         <div>
