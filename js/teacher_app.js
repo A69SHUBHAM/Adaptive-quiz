@@ -5,7 +5,16 @@ window.teacherApp = (function () {
   function init() {
     const loginBtn = document.getElementById("tlogin");
 
-    
+    document.addEventListener("keydown", function(e){
+  if(e.key === "Enter"){
+    const loginBtn = document.getElementById("tlogin");
+    if(loginBtn){
+      loginBtn.click();
+    }
+  }
+});
+
+
     if (loginBtn) {
       loginBtn.onclick = () => {
         const val = document.getElementById("tpass").value;
@@ -140,7 +149,9 @@ window.viewWrong = function(index) {
     `;
   });
 
+  
   const modal = document.createElement("div");
+  modal.id = "wrongModal";
   modal.style.cssText = `
     position:fixed;
     top:0;
@@ -154,8 +165,10 @@ window.viewWrong = function(index) {
     z-index:9999;
   `;
 
+  
   const box = document.createElement("div");
   box.style.cssText = `
+    position:relative;
     background:#0f172a;
     padding:20px;
     border-radius:14px;
@@ -166,14 +179,24 @@ window.viewWrong = function(index) {
     box-shadow:0 0 20px rgba(0,0,0,0.8);
   `;
 
-  box.innerHTML = html + `
-    <div style="text-align:center;margin-top:12px;">
-      <button class="link-btn" onclick="document.body.removeChild(document.getElementById('wrongModal'))">Close</button>
-    </div>
+  
+  const closeBtn = document.createElement("div");
+  closeBtn.innerHTML = "✖";
+  closeBtn.style.cssText = `
+    position:absolute;
+    top:10px;
+    right:12px;
+    font-size:20px;
+    cursor:pointer;
+    color:#ff7777;
   `;
+  closeBtn.onclick = () => modal.remove();
 
-  modal.id = "wrongModal";
+  box.innerHTML += html;
+
+  box.appendChild(closeBtn);
   modal.appendChild(box);
   document.body.appendChild(modal);
 };
+
 

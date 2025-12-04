@@ -72,6 +72,13 @@ if(last && last.name === userData.name){
   
   window.addEventListener('DOMContentLoaded', ()=>{
     const start = document.getElementById('startBtn');
+    document.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        const start = document.getElementById("startBtn");
+        if(start) start.click();
+    }
+});
+
     if(start){
       start.onclick = ()=>{
         const name = document.getElementById('name').value.trim();
