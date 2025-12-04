@@ -33,33 +33,35 @@ window.studentApp = (function(){
 
     
     const last = JSON.parse(localStorage.getItem("last_performance") || "null");
+const userData = getUser(); 
 
-    if(last){
-      let recommended = last.level;
 
-      if(last.level === "beginner"){
+if(last && last.name === userData.name){
+    
+    let recommended = last.level;
+
+    if(last.level === "beginner"){
         recommended = last.score <= 3 ? "beginner" : "intermediate";
-      }
-      else if(last.level === "intermediate"){
+    }
+    else if(last.level === "intermediate"){
         if(last.score <= 3) recommended = "beginner";
         else if(last.score >= 6) recommended = "advanced";
         else recommended = "intermediate";
-      }
-      else if(last.level === "advanced"){
-        recommended = last.score <= 3 ? "intermediate" : "advanced";
-      }
-
-      const recBox = document.createElement("p");
-      recBox.className = "small muted";
-      recBox.style.marginTop = "5px";
-      recBox.innerHTML = `
-        Recommended level based on your last quiz:
-        <strong style="color:var(--accent)">${levelNames[recommended]}
-</strong>
-      `;
-
-      document.getElementById("greet").after(recBox);
     }
+    else if(last.level === "advanced"){
+        recommended = last.score <= 3 ? "intermediate" : "advanced";
+    }
+
+    const recBox = document.createElement("p");
+    recBox.className = "small muted";
+    recBox.style.marginTop = "5px";
+    recBox.innerHTML = `
+        Recommended level based on your last quiz:
+        <strong style="color:var(--accent)">${levelNames[recommended]}</strong>
+    `;
+    document.getElementById("greet").after(recBox);
+}
+
 
     document.querySelectorAll('.level-btn')
       .forEach(b => b.onclick = ()=> startQuiz(b.dataset.level));
@@ -254,16 +256,41 @@ qDiv.className = 'question';
           <div class="stat"><strong>Percentage</strong><div style="font-size:18px">${pct}%</div></div>
           <div class="stat"><strong>Date</strong><div class="small muted">${report.date}</div></div>
         </div>
+<!-- WRONG ANSWERS LIST -->
+<div style="margin-top:20px;">
+  <h3>Wrong Answers</h3>
+  ${report.wrong.length === 0 
+      ? `<p class="small" style="color:#34d399;">All answers are correct! 🎉</p>`
+      : report.wrong.map((w, i) => `
+          <div style="
+            padding:12px;
+            margin:10px 0;
+            background:rgba(255,255,255,0.03);
+            border-radius:10px;
+          ">
+            <strong>Q${i+1}.</strong> ${w.question} <br>
+            <span class="small muted">Correct Answer:</span> 
+            <span style="color:#34d399;">${w.options[w.correct]}</span><br>
+            <span class="small muted">Your Answer:</span> 
+            <span style="color:#ff6b6b;">${w.options[w.selected]}</span>
+          </div>
+        `).join('')
+  }
+</div>
 
         <div style="margin-top:12px">
           <canvas id="resultChart"></canvas>
         </div>
 
+        
+
         <div class="row" style="margin-top:12px">
           <button id="retake" class="link-btn" style="margin-right:8px">Retake Quiz</button>
           <a class="link-btn" href="../index.html">Back to Portal</a>
         </div>
+        
       `;
+      
 
       const ctx = document.getElementById('resultChart').getContext('2d');
 
