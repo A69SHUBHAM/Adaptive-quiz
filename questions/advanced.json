@@ -14,45 +14,45 @@
     "id": 2,
     "question": "What does '=== ' do in JavaScript?",
     "options": [
-      "Strict equality",
       "Assignment",
       "Type conversion equality",
-      "Inequality"
+      "Inequality",
+      "Strict equality"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 3,
     "question": "What is a Promise in JavaScript?",
     "options": [
-      "An object for async operations",
       "A function",
       "A loop",
+      "An object for async operations",
       "A conditional"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 4,
     "question": "Which method converts JSON string to object?",
     "options": [
-      "JSON.parse()",
       "JSON.stringify()",
       "toJSON()",
-      "parseJSON()"
+      "parseJSON()",
+      "JSON.parse()"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 5,
     "question": "Which array method returns a new array with results of calling a function on every element?",
     "options": [
-      "map()",
       "forEach()",
+      "map()",
       "filter()",
       "reduce()"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 6,
@@ -91,12 +91,12 @@
     "id": 9,
     "question": "Which property stops event propagation?",
     "options": [
-      "event.stopPropagation()",
       "event.preventDefault()",
       "return false",
+      "event.stopPropagation()",
       "event.cancel()"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 10,
@@ -124,23 +124,23 @@
     "id": 12,
     "question": "Which method merges arrays into a new one?",
     "options": [
-      "concat()",
       "push()",
+      "concat()",
       "splice()",
       "merge()"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 13,
     "question": "What is hoisting in JavaScript?",
     "options": [
-      "Declarations moved to top",
       "Variables deleted",
       "Functions compiled",
-      "Errors thrown"
+      "Errors thrown",
+      "Declarations moved to top"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 14,
@@ -157,11 +157,11 @@
     "id": 15,
     "question": "Which API is used to make network requests in modern browsers?",
     "options": [
-      "fetch()",
       "XMLHttpRequest",
       "axios only",
+      "fetch()",
       "net.request()"
     ],
-    "answer": 0
+    "answer": 2
   }
 ]

@@ -3,23 +3,23 @@
     "id": 1,
     "question": "What does HTML stand for?",
     "options": [
-      "HyperText Markup Language",
       "Home Tool Markup Language",
       "Hyperlinks Text Mark Language",
-      "Hyperlinking Text Markup Language"
+      "Hyperlinking Text Markup Language",
+      "HyperText Markup Language"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 2,
     "question": "Which tag is used for a paragraph?",
     "options": [
-      "<p>",
       "<div>",
       "<span>",
+      "<p>",
       "<para>"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 3,
@@ -36,12 +36,12 @@
     "id": 4,
     "question": "Which attribute is used to provide alternative text for an image?",
     "options": [
-      "alt",
       "src",
       "title",
+      "alt",
       "description"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 5,
@@ -58,34 +58,34 @@
     "id": 6,
     "question": "Which attribute is used to specify the URL of a link?",
     "options": [
-      "href",
       "src",
+      "href",
       "link",
       "url"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 7,
     "question": "Which tag is used to define a table row?",
     "options": [
-      "<tr>",
       "<td>",
       "<th>",
+      "<tr>",
       "<table>"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 8,
     "question": "Which element defines the title of a document shown in the browser tab?",
     "options": [
-      "<title>",
       "<head>",
       "<meta>",
-      "<header>"
+      "<header>",
+      "<title>"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 9,
@@ -135,12 +135,12 @@
     "id": 13,
     "question": "Which attribute is used to open a link in a new tab?",
     "options": [
-      "target",
       "rel",
+      "target",
       "href",
       "new"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 14,
@@ -157,11 +157,11 @@
     "id": 15,
     "question": "Which HTML element is used to embed JavaScript?",
     "options": [
-      "<script>",
       "<js>",
       "<javascript>",
-      "<code>"
+      "<code>",
+      "<script>"
     ],
-    "answer": 0
+    "answer": 3
   }
 ]

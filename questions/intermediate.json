@@ -14,34 +14,34 @@
     "id": 2,
     "question": "How do you center-align text using CSS?",
     "options": [
-      "text-align:center",
       "align:center",
+      "text-align:center",
       "center-text",
       "justify"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 3,
     "question": "Which property is used to change the background color?",
     "options": [
-      "background-color",
       "bgcolor",
       "back-color",
+      "background-color",
       "background"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 4,
     "question": "Which CSS property controls the size of an element's font?",
     "options": [
-      "font-size",
       "text-size",
       "size",
-      "font-style"
+      "font-style",
+      "font-size"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 5,
@@ -58,12 +58,12 @@
     "id": 6,
     "question": "Which unit is relative to the root font-size?",
     "options": [
-      "rem",
       "em",
+      "rem",
       "px",
       "%"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 7,
@@ -80,67 +80,67 @@
     "id": 8,
     "question": "What does the 'flex' property do in a flex container?",
     "options": [
-      "Defines flexible space",
       "Sets width",
       "Creates table layout",
-      "Positions element"
+      "Positions element",
+      "Defines flexible space"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 9,
     "question": "Which pseudo-class applies when the user hovers over an element?",
     "options": [
-      ":hover",
       ":active",
+      ":hover",
       ":focus",
       ":visited"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 10,
     "question": "How do you select an element with id 'main' in CSS?",
     "options": [
-      "#main",
       ".main",
       "main",
+      "#main",
       "*main"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 11,
     "question": "Which property sets the space between flex items?",
     "options": [
-      "gap",
-      "spacing",
       "margin",
-      "padding"
+      "padding",
+      "gap",
+      "spacing"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 12,
     "question": "Which property is used to make text bold?",
     "options": [
-      "font-weight",
       "text-weight",
       "font-style",
+      "font-weight",
       "font-bold"
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 13,
     "question": "What does 'box-sizing: border-box' do?",
     "options": [
-      "Includes padding in width",
       "Excludes padding",
+      "Includes padding in width",
       "Removes borders",
       "Sets box to grid"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "id": 14,
