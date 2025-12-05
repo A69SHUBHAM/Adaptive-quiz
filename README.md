@@ -50,6 +50,15 @@ Recommendation logic:
 
 Updated recommendation appears on next login or quiz retake
 
+Tech Stack:
+
+Component	Technology ->
+
+Frontend -	HTML, CSS, JavaScript
+Data Handling -	JSON (for questions and storing results)
+Charts & Visualization - Chart.js
+Logic & Flow - Vanilla JavaScript (client-side)
+
 
 
 
