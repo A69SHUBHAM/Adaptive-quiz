@@ -18,9 +18,9 @@ Detailed results after submission:
     
 Adaptive Recommendation System
 
-  -Performs well → Recommends Advanced
-  -Average performance → Recommends Intermediate
-  -Poor performance → Suggests Easy
+  - Performs well → Recommends Advanced
+  - Average performance → Recommends Intermediate
+  - Poor performance → Suggests Easy
 
 Retake quizzes with personalized recommendations
 
