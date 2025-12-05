@@ -15,6 +15,16 @@ Detailed results after submission:
   - Performance pie chart (powered by Chart.js)
   - Marks + percentage
   - Date & time of attempt
+    
+Adaptive Recommendation System
+
+  -Performs well → Recommends Advanced
+  -Average performance → Recommends Intermediate
+  -Poor performance → Suggests Easy
+
+Retake quizzes with personalized recommendations
+
+
 
 
 
