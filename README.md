@@ -59,6 +59,14 @@ Data Handling -	JSON (for questions and storing results)
 Charts & Visualization - Chart.js
 Logic & Flow - Vanilla JavaScript (client-side)
 
+Future Improvements:
+
+AI-based difficulty prediction
+Admin dashboard
+Student progress tracking graphs
+More quiz categories
+Authentication system with database
+
 
 
 
