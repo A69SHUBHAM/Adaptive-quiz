@@ -25,6 +25,19 @@ Adaptive Recommendation System
 
 Retake quizzes with personalized recommendations
 
+Teacher Portal:
+
+Secure password-based login for teachers
+Displays complete performance data of all students:
+
+  - Student name & email
+  - Marks & percentage
+  - Chosen difficulty level
+  - Time & date of attempt
+  - Wrong answers submitted
+
+Helps teachers track progress and identify weak areas
+
 
 
 
