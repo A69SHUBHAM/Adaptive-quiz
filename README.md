@@ -3,7 +3,8 @@ QUIZENG.IO — Adaptive Quiz Engine
 A smart, adaptive, and user-friendly quiz platform tailored for students, teachers, and educational institutions.
 QUIZENG.IO adjusts difficulty levels based on performance and provides analytics for both learners and educators.
 
-Features
+FEATURES:-
+
 Student Portal:
 
 Login with name & email (auto-creates account if new)
@@ -23,6 +24,7 @@ Adaptive Recommendation System
   - Poor performance → Suggests Easy
 
 Retake quizzes with personalized recommendations
+
 
 
 
