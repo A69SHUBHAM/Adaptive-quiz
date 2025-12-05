@@ -38,6 +38,18 @@ Displays complete performance data of all students:
 
 Helps teachers track progress and identify weak areas
 
+Adaptive Logic (How QUIZENG.IO Thinks):
+
+Student completes quiz
+System calculates accuracy
+Recommendation logic:
+
+  - High score → Advanced recommended
+  - Moderate score → Intermediate recommended
+  - Low score → Easy recommended
+
+Updated recommendation appears on next login or quiz retake
+
 
 
 
